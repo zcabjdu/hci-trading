@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+#main_myNav{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	/*padding: 0.5%;*/
+}
+
+.center{
+	text-align: center;
+}
+
+.textRecolour{
+	color: white !important;
+	/*text-align: justify;*/
+}
+
+.pageBlock{
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+	/*min-height: 420px;*/
+	margin-bottom: 0px !important;
+	overflow: auto !important;
+	/*padding-top: 0px !important;
+	padding-bottom: 0px !important;*/
+	background: #E46D43;
+}
+
+#main{
+	background: #E46D43;
+	/*min-height: 550px !important;*/
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+	padding-top: 30px !important;
+}
+
+.halfCol{
+	width: 50%;
+}
+
+.floatLeft{
+	float: left;
+}
+
+.floatRight{
+	float: right;
+}
+
+.progressLeft{
+	margin-bottom: 7px !important;
+}
+
+.centerBox{
+	width: 50% !important;
+	margin-left: 25%;
+	margin-bottom: 10px;
+	z-index: 0;
+}
+
+.centrehalf{
+	width: 50%;
+	margin-left: 25%;
+}
+
+.hiddenBreak{
+	display: none;
+}
+
+.avatarContainer{
+	width: 100%;
+	text-align: center !important;
+}
+
+.avatar{
+	width: 50%;
+	/*border-radius: 50%;*/
+}
+
+#footerDiv{
+	height: auto;
+	background: #dd4814;
+	/*margin-top: 30px;*/
+}
+
+#optionSection{
+	background: #E46D43;
+}
+
+.outline{
+	border: 2px solid #E46D43;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.whiteText{
+	color: white;
+}
+
+.blackText{
+	color: black;
+}
+
+
+@media (max-width: 551px) {
+    /**/
+	html, body {
+	    		height: 100%;
+	    		margin: 0;
+	    	}
+
+	    	.pageBlock {
+	    		/*min-height: 100%; */
+	    	}
+	/**/
+
+    #main{
+		/*min-height: 550px !important;*/
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+    .pageBlock{
+		padding-left: 7px !important;
+		padding-right: 7px !important;
+		/*min-height: 420px;*/
+		margin-bottom: 0px !important;
+		overflow: auto !important;
+	}
+	.hiddenBreak{
+		display: block;
+	}
+	.floatLeft{
+		float: none;
+	}
+
+	.floatRight{
+		float: none;
+	}
+
+	.centerBox{
+		width: 100% !important;
+		margin-left: 0% !important;
+	}
+	.centrehalf{
+		width: 100% !important;
+		margin-left: 0% !important;
+	}
+}
