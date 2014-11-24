@@ -11,24 +11,6 @@
     <link rel="stylesheet" href="css/bootstrap.css" media="screen">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/bootstrap.min.js"></script>
-    <!-- START SMOOTH SCROLL --><!--
-    <script>
-        $(function() {
-          $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-              if (target.length) {
-                $('html,body').animate({
-                  scrollTop: target.offset().top
-                }, 1000);
-                return false;
-              }
-            }
-          });
-        });
-    </script>
-	--><!-- END SMOOTH SCROLL -->
 </head>
 
 <body>
@@ -67,91 +49,28 @@
     <div id="loginSection" class="pageBlock jumbotron">
         <!-- <h1>Get started</h1> -->
         <div class="outline col-md-6">
-            <h2 class="textRecolour">Existing user? Login</h2>
+            <h2 class="textRecolour">Existing user? Login here</h2>
             <br>
             <form class="centrehalf form-horizontal">
               <fieldset>
-                <!-- <legend>All information is required</legend> -->
-                <!-- <div class="form-group">
-                  <label for="inputName" class="col-lg-2 control-label">Full Name</label>
-                  <div class="col-lg-10">
-                    <input class="form-control" id="inputName" placeholder="Name" type="text">
-                  </div>
-                </div> -->
+                <h4><strong>Username</strong></h4>
                 <div class="form-group">
-                  <label for="inputUsername" class="col-lg-2 control-label">Username</label>
                   <div class="col-lg-10">
                     <input class="form-control" id="inputUsername" placeholder="Username" type="text">
                   </div>
                 </div>
-                <!-- <div class="form-group">
-                  <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-                  <div class="col-lg-10">
-                    <input class="form-control" id="inputEmail" placeholder="Email" type="text">
-                  </div>
-                </div> -->
+                <h4><strong>Password</strong></h4>
                 <div class="form-group">
-                  <label for="inputPassword" class="col-lg-2 control-label">Password</label>
                   <div class="col-lg-10">
                     <input class="form-control" id="inputPassword" placeholder="Password" type="password">
                   </div>
                 </div>
-                <!-- <div class="form-group">
-                  <label for="inputConfirmPassword" class="col-lg-2 control-label">Confirm Password</label>
-                  <div class="col-lg-10">
-                    <input class="form-control" id="inputConfirmPassword" placeholder="Confirm Password" type="password">
-                  </div>
-                </div>
                 <div class="form-group">
-                  <label for="textArea" class="col-lg-2 control-label">Full Home Address</label>
                   <div class="col-lg-10">
-                    <textarea class="form-control" rows="3" id="textArea"></textarea>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label class="col-lg-2 control-label">Gender</label>
-                  <div class="col-lg-10">
-                    <div class="radio">
-                      <label>
-                        <input name="optionsRadios" id="optionsRadios1" value="option1" checked="" type="radio">
-                        Male
-                      </label>
-                    </div>
-                    <div class="radio">
-                      <label>
-                        <input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
-                        Female
-                      </label>
-                    </div>
-                  </div>
-                </div> -->
-                <!-- <div class="form-group">
-                  <label for="select" class="col-lg-2 control-label">Selects</label>
-                  <div class="col-lg-10">
-                    <select class="form-control" id="select">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                    <br>
-                    <select multiple="" class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div> -->
-                <div class="form-group">
-                  <div class="col-lg-10 col-lg-offset-2">
-                    <!-- <button class="btn btn-default">Cancel</button> -->
                     <button type="submit" class="btn btn-primary">Login</button>
                   </div>
-                    <span class="col-lg-offset-2 textRecolour help-block">Forgot your password? <a href="#">contact the Admin</a> for more help!</span>
                 </div>
+                <h5 class="whiteText">Forgot your password?<br><a class="blackText" href="#"><strong>Contact the Admin</strong></a> for more help!</h5>
               </fieldset>
             </form>
 
@@ -163,45 +82,44 @@
             <form class="centrehalf form-horizontal">
               <fieldset>
                 <legend>All information is required</legend>
+                <h4><strong>Full Name</strong></h4>
                 <div class="form-group">
-                  <label for="inputName" class="col-lg-2 control-label">Full Name</label>
                   <div class="col-lg-10">
                     <input class="form-control" id="inputName" placeholder="Name" type="text">
                   </div>
                 </div>
+                <h4><strong>Username</strong></h4>
                 <div class="form-group">
-                  <label for="inputUsername" class="col-lg-2 control-label">Username</label>
                   <div class="col-lg-10">
                     <input class="form-control" id="inputUsername" placeholder="Username" type="text">
                   </div>
                 </div>
+                <h4><strong>Email</strong></h4>
                 <div class="form-group">
-                  <label for="inputEmail" class="col-lg-2 control-label">Email</label>
                   <div class="col-lg-10">
                     <input class="form-control" id="inputEmail" placeholder="Email" type="text">
                   </div>
                 </div>
+                <h4><strong>Password</strong></h4>
                 <div class="form-group">
-                  <label for="inputPassword" class="col-lg-2 control-label">Password</label>
                   <div class="col-lg-10">
                     <input class="form-control" id="inputPassword" placeholder="Password" type="password">
                   </div>
                 </div>
+                <h4><strong>Confirm Password</strong></h4>
                 <div class="form-group">
-                  <label for="inputConfirmPassword" class="col-lg-2 control-label">Confirm Password</label>
                   <div class="col-lg-10">
                     <input class="form-control" id="inputConfirmPassword" placeholder="Confirm Password" type="password">
                   </div>
                 </div>
+                <h4><strong>Full Home Address</strong></h4>
                 <div class="form-group">
-                  <label for="textArea" class="col-lg-2 control-label">Full Home Address</label>
                   <div class="col-lg-10">
                     <textarea class="form-control" rows="3" id="textArea"></textarea>
-                    <!-- <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span> -->
                   </div>
                 </div>
+                <h4><strong>Gender</strong></h4>
                 <div class="form-group">
-                  <label class="col-lg-2 control-label">Gender</label>
                   <div class="col-lg-10">
                     <div class="radio">
                       <label>
@@ -217,32 +135,10 @@
                     </div>
                   </div>
                 </div>
-                <!-- <div class="form-group">
-                  <label for="select" class="col-lg-2 control-label">Selects</label>
-                  <div class="col-lg-10">
-                    <select class="form-control" id="select">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                    <br>
-                    <select multiple="" class="form-control">
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                    </select>
-                  </div>
-                </div> -->
                 <div class="form-group">
-                  <div class="col-lg-10 col-lg-offset-2">
-                    <!-- <button class="btn btn-default">Cancel</button> -->
+                  <div class="col-lg-10">
                     <button type="submit" class="btn btn-primary">Register</button>
                   </div>
-                  <!-- <span class="help-block"></span> -->
                 </div>
               </fieldset>
             </form>
