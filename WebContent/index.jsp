@@ -85,16 +85,18 @@ else
         <h1>Get started</h1>
         <div class="outline col-md-6">
             <h2 class="textRecolour center">Buy/Trade</h2>
-            <div class="form-group">
-                <div class="centerBox input-group">
-                    <input type="text" class="form-control" placeholder="Search for items">
-                    <span class="input-group-btn">
-                        <button onclick="search()" class="btn btn-default" type="button">Go</button>
-                    </span>
-                </div>
-                <p class="textRecolour">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <a href="#" class="centerBox btn btn-primary btn-lg">Start Here</a>
-            </div>
+            <form action="SearchController" method="post">
+	            <div class="form-group">
+	                <div class="centerBox input-group">
+	                    <input type="text" class="form-control" placeholder="Search for items" name="search">
+	                    <span class="input-group-btn">
+	                        <button type="submit" class="btn btn-default">Go</button>
+	                    </span>
+	                </div>
+	                <p class="textRecolour">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	                <a href="#" class="centerBox btn btn-primary btn-lg">Start Here</a>
+	            </div>
+            </form>
         </div>
     	<div class="outline col-md-6">
             <h2 class="textRecolour center">Sell</h2>   
@@ -110,12 +112,6 @@ else
     	<p class="center textRecolour">Rohan Kopparapu. 2014. Built with <a class="textRecolour" href="http://www.bootswatch.com/united/">Bootswatch United</a></p>
     </div>
     <!-- FOOTER END -->
-
-    <script type="text/javascript">
-        function search(){
-            window.location.replace("results.html");
-        }
-    </script>
 </body>
 
 
