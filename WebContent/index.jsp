@@ -32,7 +32,6 @@
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="index.jsp">Home</a></li>
 <%                 
-System.out.println(session.getAttribute("user"));
 if ( session.getAttribute("user") == null )
 {
 %>

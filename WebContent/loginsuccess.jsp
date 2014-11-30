@@ -8,6 +8,7 @@
 </head>
 <body>
 	Login Successful, redirecting...
+	<a href="index.jsp">Click here if not automatically redirected</a>
 <%
 	String user = request.getParameter( "username" );
 	session.setAttribute( "user", user );

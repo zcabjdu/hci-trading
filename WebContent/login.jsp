@@ -1,9 +1,11 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>ShoreTrade - Login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -45,11 +47,19 @@
     </div>
     <!-- NAVBAR END-->
 
+
     <!-- OPTIONS START -->
     <div id="loginSection" class="pageBlock jumbotron">
         <!-- <h1>Get started</h1> -->
         <div class="outline col-md-6">
             <h2 class="textRecolour">Existing user? Login here</h2>
+<% if ( session.getAttribute("login") == "failed" )
+{
+%>            
+            <div>Login unsuccessful - Wrong username or password</div>
+<%
+} 
+%>           
             <br>
             <form class="centrehalf form-horizontal" action="LoginController" method="post">
               <fieldset>

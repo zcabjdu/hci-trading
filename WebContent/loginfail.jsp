@@ -7,6 +7,11 @@
 <title>Shoretrade - Login Fail</title>
 </head>
 <body>
-	FAIL
+	Login Failed, redirecting...
+	<a href="login.jsp">Click here if not automatically redirected</a>
+<%
+	session.setAttribute( "login", "failed" );
+    response.sendRedirect("login.jsp");
+%>
 </body>
 </html>
