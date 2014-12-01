@@ -59,7 +59,15 @@
             <div>Login unsuccessful - Wrong username or password</div>
 <%
 } 
-%>           
+%>
+
+<% if ( session.getAttribute("register") == "success" )
+{
+%>            
+            <div>Successfully Registered - Please login</div>
+<%
+} 
+%>            
             <br>
             <form class="centrehalf form-horizontal" action="LoginController" method="post">
               <fieldset>
@@ -89,31 +97,31 @@
     	<div class="outline col-md-6">
             <h2 class="textRecolour">New user? Register</h2>
             <br>
-            <form class="centrehalf form-horizontal">
+            <form class="centrehalf form-horizontal" action="RegisterController" method="post">
               <fieldset>
                 <legend>All information is required</legend>
                 <h4><strong>Full Name</strong></h4>
                 <div class="form-group">
                   <div class="col-lg-10">
-                    <input class="form-control" id="inputName" placeholder="Name" type="text">
+                    <input class="form-control" id="inputName" placeholder="Name" type="text" name="fullname">
                   </div>
                 </div>
                 <h4><strong>Username</strong></h4>
                 <div class="form-group">
                   <div class="col-lg-10">
-                    <input class="form-control" id="inputUsername" placeholder="Username" type="text">
+                    <input class="form-control" id="inputUsername" placeholder="Username" type="text" name="username">
                   </div>
                 </div>
                 <h4><strong>Email</strong></h4>
                 <div class="form-group">
                   <div class="col-lg-10">
-                    <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                    <input class="form-control" id="inputEmail" placeholder="Email" type="text" name="email">
                   </div>
                 </div>
                 <h4><strong>Password</strong></h4>
                 <div class="form-group">
                   <div class="col-lg-10">
-                    <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                    <input class="form-control" id="inputPassword" placeholder="Password" type="password" name="password">
                   </div>
                 </div>
                 <h4><strong>Confirm Password</strong></h4>
@@ -125,7 +133,7 @@
                 <h4><strong>Full Home Address</strong></h4>
                 <div class="form-group">
                   <div class="col-lg-10">
-                    <textarea class="form-control" rows="3" id="textArea"></textarea>
+                    <textarea class="form-control" rows="3" id="textArea" name="address"></textarea>
                   </div>
                 </div>
                 <h4><strong>Gender</strong></h4>

@@ -24,3 +24,4 @@ public class Product {
         return "Product [productid=" + productid + ", name=" + name + "]";
     } 
 }
+

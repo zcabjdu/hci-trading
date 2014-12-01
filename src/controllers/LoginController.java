@@ -9,16 +9,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import models.Authenticator;
+import dao.UserDao;
 import models.User;
 
 @WebServlet("/LoginController")
 public class LoginController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private UserDao dao;
 
 	public LoginController() {
 		super();
+		dao = new UserDao();
 	}
+
 
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -27,16 +30,21 @@ public class LoginController extends HttpServlet {
 		String password = request.getParameter("password");
 		RequestDispatcher rd = null;
 
-		Authenticator authenticator = new Authenticator();
-		String result = authenticator.authenticate(username, password);
-		if (result.equals("success")) {
-			rd = request.getRequestDispatcher("loginsuccess.jsp");
-			User user = new User(username, password);
-			request.setAttribute("user", user);
-		} else {
+		User user =  dao.getUserByUsername(username);
+		String truepassword = user.getPassword();
+		
+		if (truepassword == null) {
 			rd = request.getRequestDispatcher("loginfail.jsp");
+		}
+		else {			
+			if (truepassword.equals(password)) {
+				rd = request.getRequestDispatcher("loginsuccess.jsp");
+			} else {
+				rd = request.getRequestDispatcher("loginfail.jsp");
+			}
 		}
 		rd.forward(request, response);
 	}
+
 
 }
