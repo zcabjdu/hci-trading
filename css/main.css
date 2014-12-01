@@ -77,6 +77,13 @@
 	/*border-radius: 50%;*/
 }
 
+.avatarP{
+	/*max-height: 300px;*/
+	width: 50%;
+	margin-left: 25%;
+	border-radius: 50%;
+}
+
 #footerDiv{
 	height: auto;
 	background: #dd4814;
